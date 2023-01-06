@@ -1,0 +1,129 @@
+.contact__content {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+.contact__form {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact__form h3 {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  font-size: 25px;
+}
+
+.form__input {
+  width: 100%;
+  position: relative;
+}
+
+.form__input label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 16px;
+  order: 1;
+  margin: 10px;
+  padding: 0 10px;
+  background-color: white;
+  -webkit-transition: top .2s ease-in-out,  font-size .2s ease-in-out;
+  transition: top .2s ease-in-out,  font-size .2s ease-in-out;
+}
+
+.form__input input, .form__input textarea {
+  padding: 16px;
+  letter-spacing: 1px;
+  font-size:16px;
+  width: 100%;
+  margin-top: 10px;
+  border:none;
+}
+
+.form__input input {
+  height: 40px;
+}
+
+.form__input textarea {
+  height: 100px;
+}
+
+.form__input input:focus + label {
+  top: -10px;
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 6px;
+}
+
+.form__input textarea:focus + label {
+  top: -10px;
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 6px;
+}
+
+.contact__form button {
+  margin-top: 14px;
+}
+
+.contact__image img {
+  width: 570px;
+  height: 470px;
+  object-fit: cover;
+}
+
+.contact__data__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap:150px;
+  margin-top: 70px ;
+}
+
+.data__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap:10px;
+}
+
+.data__container img {
+  width: 25px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.media__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 60px;
+  margin-top: 75px;
+  margin-bottom: 75px;
+}
+
+@media screen and (max-width:720px) {
+  .contact__content {
+    margin: auto;
+    width: fit-content;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .contact__form {
+    width: 60%;
+    margin: 20px auto;
+    justify-content: center;
+  }
+
+  .contact__form button {
+    margin: 10px auto;
+  }  
+  
+  .contact__image {
+    display: none;
+  }
+}

@@ -1,0 +1,23 @@
+.blog__container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+}
+
+.blog__card {
+  display: flex;
+  flex-direction: column;
+}
+
+.card__content {
+  display: flex;
+  flex-direction: column;
+  gap:10px;
+  padding: 30px;
+  font-size: 16px;
+}
+
+.card__content p {
+  font-weight: 500;
+}

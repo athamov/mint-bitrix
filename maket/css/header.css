@@ -1,0 +1,40 @@
+.header {
+  margin-top: 240px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.header__content__text{
+  width: 530px;
+}
+
+.header__content__button {
+  margin-top: 40px;
+}
+
+.header__image {
+  width: 570px;
+  height: 540px;
+}
+
+@media (max-width: 768px) {
+  .header {
+    margin: 240px auto;
+    flex-direction: column;
+  }
+
+  .header__content h2,p {
+    margin: auto;
+    width: fit-content;
+  }
+
+  .header__content button {
+    display: block; 
+    margin: 30px auto; 
+  }
+
+  .header__image {
+    display: none;
+  }
+}

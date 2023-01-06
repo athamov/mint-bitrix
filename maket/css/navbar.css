@@ -1,0 +1,19 @@
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 30px;
+  position: fixed;
+  top: 0;
+  width: 1170px;
+}
+
+.navbar__image {
+  width: 90px;
+  height: 55px;
+}
+
+.navbar__list {
+  gap: 90px;
+  margin-top: 16px;
+}

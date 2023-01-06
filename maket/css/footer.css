@@ -1,0 +1,32 @@
+footer {
+  min-width: max-content;
+  background: var(--black);
+  padding-top: 60px;
+  padding-bottom: 60px;
+  color: white;
+}
+
+.footer__wrapper {
+  margin: auto;
+  width: 1170px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: white;
+}
+
+.footer__wrapper div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap:20px;
+}
+
+.footer__wrapper a {
+  color: white;
+  -webkit-text-fill-color: white;
+  height: 20px;
+  text-decoration: none;
+  margin-top: auto;
+  margin-bottom: auto;
+}
